@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slice Of Life — Everyday experiences with local people</title>
+<meta name="description" content="Skip the tour bus. Cook a family recipe, join a neighborhood clean-up, trade languages over coffee. Slice Of Life connects travelers with the everyday routines of local people.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container utility-row">
+    <ul class="utility-links">
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+  <div class="container main-row">
+    <a href="index.html" class="logo">Slice<span class="dot">·</span>Of<span class="dot">·</span>Life</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">What Is Slice Of Life?</a></li>
+        <li><a href="host-with-us.html">Host With Us</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="nav-cta">Register / Log In</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<!--
+  HERO IMAGE — swap here:
+  Replace the <div class="hero-bg-placeholder">...</div> block below with:
+    <img class="hero-bg" src="your-image.jpg" alt="Landscape view of Bangkok">
+  Drop your image file in this same folder before uploading to GitHub.
+-->
+<section class="hero-immersive">
+  <div class="hero-bg-placeholder" aria-hidden="true">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="1200" height="700" fill="#8A9BA8"/>
+      <rect width="1200" height="700" fill="url(#skyfade)"/>
+      <defs>
+        <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#C7906B"/>
+          <stop offset="45%" stop-color="#B98868"/>
+          <stop offset="100%" stop-color="#5C5A4E"/>
+        </linearGradient>
+      </defs>
+      <circle cx="620" cy="230" r="70" fill="#EFD9A8" opacity="0.85"/>
+      <polygon points="0,520 140,360 260,470 400,300 520,470 640,340 780,480 900,320 1040,470 1200,380 1200,700 0,700" fill="#4B4A40" opacity="0.9"/>
+      <polygon points="0,600 180,470 340,560 520,440 700,570 880,450 1040,580 1200,480 1200,700 0,700" fill="#302F28"/>
+      <rect x="0" y="640" width="1200" height="60" fill="#22211C"/>
+    </svg>
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow">Bangkok · Est. 2026</span>
+    <h1 class="hero-wordmark">Slice<span class="dot">·</span>Of<span class="dot">·</span>Life</h1>
+    <p class="hero-strapline"><em>Your strapline goes here — send it over and we'll drop it right in.</em></p>
+
+    <div class="experience-picker">
+      <span class="picker-label">Experiences in</span>
+      <select id="city-select" aria-label="Choose a city">
+        <option value="bangkok">Bangkok, Thailand</option>
+      </select>
+      <a href="experiences.html" class="btn btn-primary">Explore</a>
+    </div>
+
+    <p class="hero-swap-note">More cities coming soon — starting in Bangkok.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">This week, in Bangkok</span>
+      <h2>A few things people are hosting</h2>
+    </div>
+    <div class="card-grid">
+      <article class="index-card">
+        <span class="tag clay">Cooking</span>
+        <h3>Grandma Orn's curry paste</h3>
+        <p>Pound your own paste from scratch in a home kitchen off Sukhumvit — no shortcuts, no pre-made pastes.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>4 spots left</span></div>
+      </article>
+      <article class="index-card">
+        <span class="tag">Community</span>
+        <h3>Khlong clean-up crew</h3>
+        <p>A canal clean-up that runs every other Saturday morning. Gloves provided, coffee after.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>Open to all</span></div>
+      </article>
+      <article class="index-card">
+        <span class="tag ochre">Market & Food</span>
+        <h3>Dawn run at Khlong Toei Market</h3>
+        <p>A 6am walk through the city's biggest wet market with Nok, followed by cooking whatever looked best.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>3 spots left</span></div>
+      </article>
+    </div>
+    <div class="text-center mt-lg">
+      <a href="experiences.html" class="btn btn-outline">See all experiences</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why it works</span>
+      <h2>Built for participation, not performance</h2>
+    </div>
+    <div class="feature-row">
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="160" height="120" stroke="#AE4E2C" stroke-width="2" rx="2"/>
+          <circle cx="60" cy="70" r="18" stroke="#616B45" stroke-width="2"/>
+          <circle cx="130" cy="90" r="24" stroke="#BD8B2C" stroke-width="2"/>
+          <line x1="20" y1="140" x2="180" y2="140" stroke="#26241F" stroke-width="2"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Hosts share what's already true</h3>
+        <p>No script to follow. Every listing is a real routine — a recipe, a craft, a task, a weekly habit — that a local person was already doing, and is willing to open up.</p>
+      </div>
+    </div>
+    <div class="feature-row reverse">
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 130 L70 50 L110 100 L150 30 L180 130" stroke="#AE4E2C" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <circle cx="70" cy="50" r="4" fill="#616B45"/>
+          <circle cx="150" cy="30" r="4" fill="#BD8B2C"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Small groups, low pressure</h3>
+        <p>Most experiences hold 2–6 people. You show up, you help, you ask questions. There's no performance to sit through — you're part of what's happening.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="feature-visual">
+        <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="30" width="50" height="70" stroke="#26241F" stroke-width="2"/>
+          <rect x="110" y="60" width="50" height="70" stroke="#AE4E2C" stroke-width="2"/>
+          <line x1="90" y1="65" x2="110" y2="95" stroke="#616B45" stroke-width="2" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Money stays close to home</h3>
+        <p>Hosts set their own contribution — often just enough to cover ingredients or materials. This isn't a tour company; it's neighbors, and the arrangement stays that simple.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="ticket">
+      <p class="quote">"I went to learn how to make green curry paste. I left with a phone number and a standing invitation for next time I'm in Bangkok."</p>
+      <p class="who">— Jonas, guest in Bangkok</p>
+    </div>
+    <div class="text-center mt-lg">
+      <a href="testimonies.html" class="btn btn-outline">Read more testimonies</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Have a routine worth sharing?</h2>
+    <p>Hosting takes ten minutes to set up and nothing to perform. Just open the door on what you already do.</p>
+    <div class="hero-actions">
+      <a href="host-with-us.html" class="btn btn-primary" style="background:#AE4E2C;">Host with us</a>
+      <a href="about.html" class="btn btn-outline" style="border-color:#F2EEE6;">What is Slice Of Life?</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="fine">© 2026 Slice Of Life. A small platform for ordinary invitations.</span>
+    <ul class="foot-links">
+      <li><a href="about.html">What Is Slice Of Life?</a></li>
+      <li><a href="host-with-us.html">Host With Us</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

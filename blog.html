@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Slice Of Life</title>
+<meta name="description" content="Notes on everyday Bangkok life, hosting well, and traveling with more curiosity than checklist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container utility-row">
+    <ul class="utility-links">
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html" aria-current="page">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+  <div class="container main-row">
+    <a href="index.html" class="logo">Slice<span class="dot">·</span>Of<span class="dot">·</span>Life</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">What Is Slice Of Life?</a></li>
+        <li><a href="host-with-us.html">Host With Us</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="nav-cta">Register / Log In</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 30px;">
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div>
+      <span class="eyebrow">Notes from Bangkok</span>
+      <h1 style="max-width: 16ch;">The blog</h1>
+      <p class="lede">Short, honest pieces on everyday life in Bangkok, what makes hosting work, and how to travel with more curiosity than checklist.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 10px;">
+  <div class="container">
+    <div class="card-grid">
+      <article class="index-card">
+        <span class="tag">Guide</span>
+        <h3>Six neighborhoods that aren't in the guidebooks</h3>
+        <p>Where Bangkok locals actually spend their Sundays — and why that matters more than the top ten attractions.</p>
+        <div class="meta"><span>Coming soon</span><span>—</span></div>
+      </article>
+      <article class="index-card">
+        <span class="tag clay">Hosting</span>
+        <h3>What makes a good host — from hosts themselves</h3>
+        <p>We asked five of our earliest hosts what they wish they'd known before opening their door to strangers.</p>
+        <div class="meta"><span>Coming soon</span><span>—</span></div>
+      </article>
+      <article class="index-card">
+        <span class="tag ochre">Food</span>
+        <h3>The difference between a curry paste and a curry paste</h3>
+        <p>Why the pounded version tastes nothing like what comes out of a packet, and where to learn to make it yourself.</p>
+        <div class="meta"><span>Coming soon</span><span>—</span></div>
+      </article>
+    </div>
+    <p class="small-print mt-lg">New posts go up as we get closer to launch. Check back soon, or follow along via the newsletter below.</p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head text-center" style="max-width: 480px;">
+      <span class="eyebrow" style="justify-content:center;">Stay in the loop</span>
+      <h2>Get new posts and new listings by email</h2>
+    </div>
+    <form class="form-grid text-center" style="max-width: 480px; grid-template-columns: 1fr auto; display: grid; align-items: end;" onsubmit="event.preventDefault(); this.reset(); alert('Thanks — this is a demo form. Connect it to a mailing list service to collect real signups.');">
+      <div style="text-align: left;">
+        <label for="newsletter-email">Email address</label>
+        <input type="email" id="newsletter-email" placeholder="you@email.com" required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="height: 46px;">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="fine">© 2026 Slice Of Life. A small platform for ordinary invitations.</span>
+    <ul class="foot-links">
+      <li><a href="about.html">What Is Slice Of Life?</a></li>
+      <li><a href="host-with-us.html">Host With Us</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

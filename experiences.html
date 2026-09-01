@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experiences — Slice Of Life</title>
+<meta name="description" content="Browse everyday experiences hosted by local people — cooking, crafts, community work, and language exchange.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container utility-row">
+    <ul class="utility-links">
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+  <div class="container main-row">
+    <a href="index.html" class="logo">Slice<span class="dot">·</span>Of<span class="dot">·</span>Life</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">What Is Slice Of Life?</a></li>
+        <li><a href="host-with-us.html">Host With Us</a></li>
+        <li><a href="experiences.html" aria-current="page">Experiences</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="nav-cta">Register / Log In</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 30px;">
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div>
+      <span class="eyebrow">Currently listed · Bangkok</span>
+      <h1 style="max-width: 18ch;">Experiences hosted by real neighbors</h1>
+      <p class="lede">Every one of these is something a local person was already doing. Filter by kind, message the host, and see what's actually happening this week. Starting in Bangkok — more cities coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 20px;">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="cooking">Cooking</button>
+      <button data-filter="craft">Craft</button>
+      <button data-filter="community">Community</button>
+      <button data-filter="language">Language</button>
+      <button data-filter="market">Market & Food</button>
+    </div>
+
+    <div class="card-grid">
+      <article class="index-card" data-category="cooking">
+        <span class="tag clay">Cooking</span>
+        <h3>Grandma Orn's curry paste</h3>
+        <p>Pound your own paste from scratch in a home kitchen off Sukhumvit — no shortcuts, no pre-made pastes.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>4 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="community">
+        <span class="tag">Community</span>
+        <h3>Khlong clean-up crew</h3>
+        <p>A canal clean-up that runs every other Saturday morning. Gloves provided, coffee after.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>Open to all</span></div>
+      </article>
+
+      <article class="index-card" data-category="market">
+        <span class="tag ochre">Market & Food</span>
+        <h3>Dawn run at Khlong Toei Market</h3>
+        <p>A 6am walk through the city's biggest wet market with Nok, followed by cooking whatever looked best.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>3 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="craft">
+        <span class="tag ochre">Craft</span>
+        <h3>Basket weaving in Bang Krachao</h3>
+        <p>A quiet afternoon on the "green lung" island, learning traditional weaving from a local family.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>2 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="language">
+        <span class="tag">Language</span>
+        <h3>Thai–English swap at a local café</h3>
+        <p>Kade hosts a relaxed weekly language exchange in Ari — half Thai, half whatever you speak.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>5 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="cooking">
+        <span class="tag clay">Cooking</span>
+        <h3>Boat noodle night</h3>
+        <p>Learn the broth, the toppings, and the timing behind a bowl of real boat noodles, cooked together.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>6 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="community">
+        <span class="tag">Community</span>
+        <h3>Temple garden upkeep</h3>
+        <p>Join the neighborhood volunteers who tend the grounds of a local wat every other Sunday morning.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>Open to all</span></div>
+      </article>
+
+      <article class="index-card" data-category="craft">
+        <span class="tag ochre">Craft</span>
+        <h3>Fruit carving with Auntie Pim</h3>
+        <p>The traditional Thai art of fruit and vegetable carving, taught the way it's passed down at home.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>3 spots left</span></div>
+      </article>
+
+      <article class="index-card" data-category="market">
+        <span class="tag ochre">Market & Food</span>
+        <h3>Chinatown night market walk</h3>
+        <p>A slow evening wander through Yaowarat with a local who actually grew up eating there.</p>
+        <div class="meta"><span>Bangkok, TH</span><span>4 spots left</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Don't see your city yet?</h2>
+    <p>New hosts join every week. Get in touch and we'll let you know when something opens up nearby — or start your own listing.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary" style="background:#AE4E2C;">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="fine">© 2026 Slice Of Life. A small platform for ordinary invitations.</span>
+    <ul class="foot-links">
+      <li><a href="about.html">What Is Slice Of Life?</a></li>
+      <li><a href="host-with-us.html">Host With Us</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

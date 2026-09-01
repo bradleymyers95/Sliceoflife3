@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Slice Of Life</title>
+<meta name="description" content="Get in touch with Slice Of Life — as a guest, a host, or just to ask a question.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container utility-row">
+    <ul class="utility-links">
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+  <div class="container main-row">
+    <a href="index.html" class="logo">Slice<span class="dot">·</span>Of<span class="dot">·</span>Life</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">What Is Slice Of Life?</a></li>
+        <li><a href="host-with-us.html">Host With Us</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="nav-cta">Register / Log In</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="container" style="grid-template-columns: 1.1fr 0.9fr;">
+    <div>
+      <span class="eyebrow">Say hello</span>
+      <h1 style="max-width: 14ch;">Get in touch</h1>
+      <p class="lede">Question about joining an experience? Thinking about hosting? Or just curious about Slice Of Life — write to us and we'll get back to you within a couple of days.</p>
+    </div>
+    <div class="hero-note">
+      <b>Prefer email?</b><br>
+      hello@sliceoflife.example<br><br>
+      <b>Hosting inquiries</b><br>
+      host@sliceoflife.example
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 10px;">
+  <div class="container">
+    <form id="contact-form" class="form-grid">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="reason">I'm reaching out as a…</label>
+        <select id="reason" name="reason">
+          <option>Guest, looking for an experience</option>
+          <option>Local, interested in hosting</option>
+          <option>Press or partnership</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell us a bit about what you're looking for, or what you'd like to host…"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-note" class="small-print" style="margin-top:14px;"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Before you write in</span>
+      <h2>A couple of quick answers</h2>
+    </div>
+    <div class="card-grid">
+      <article class="index-card">
+        <span class="tag">Guests</span>
+        <h3>Can I request a city that isn't listed yet?</h3>
+        <p>Yes — tell us where you're headed and we'll flag it to hosts in that area, or let you know if something's already in the works.</p>
+      </article>
+      <article class="index-card">
+        <span class="tag clay">Hosts</span>
+        <h3>Is there a cost to list an experience?</h3>
+        <p>No upfront cost. We take a small flat fee only when a guest books, so there's no risk in listing something and seeing what happens.</p>
+      </article>
+      <article class="index-card">
+        <span class="tag ochre">Everyone</span>
+        <h3>How fast will I hear back?</h3>
+        <p>Usually within two business days. Hosting inquiries may take a little longer while we do identity verification.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="fine">© 2026 Slice Of Life. A small platform for ordinary invitations.</span>
+    <ul class="foot-links">
+      <li><a href="about.html">What Is Slice Of Life?</a></li>
+      <li><a href="host-with-us.html">Host With Us</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="legal.html">Legal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
